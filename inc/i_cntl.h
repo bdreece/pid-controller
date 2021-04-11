@@ -21,7 +21,7 @@ typedef struct {
 } i_cntl;
 
 void i_init(i_cntl *cntl, unit_t ki);
-unit_t i_eval(i_cntl *cntl, unit_t target_val, unit_t current_val, int clamp);
+unit_t i_eval(i_cntl *cntl, unit_t target_val, unit_t current_val, int clmp);
 
 #ifdef __cplusplus
 }

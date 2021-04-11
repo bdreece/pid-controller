@@ -10,7 +10,6 @@ INC_PATH	= ./inc
 SRC_PATH	= ./src
 
 OBJ_FILES	= p_cntl.o i_cntl.o d_cntl.o pi_cntl.o pd_cntl.o pid_cntl.o utils.o
-DEMO_FILE	= pid_demo.o
 
 %.o : $(SRC_PATH)/%.c
 	$(CC) $(FLAGS) $(CFLAGS) $(LFLAGS) -I$(INC_PATH) -c -o $@ $^

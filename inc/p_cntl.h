@@ -20,7 +20,7 @@ typedef struct {
 } p_cntl;
 
 void p_init(p_cntl *cntl, unit_t kp);
-unit_t p_eval(p_cntl *cntl, unit_t target_val, unit_t current_val, int clamp);
+unit_t p_eval(p_cntl *cntl, unit_t target_val, unit_t current_val, int clmp);
 
 #ifdef __cplusplus
 }

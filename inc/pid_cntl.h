@@ -13,7 +13,7 @@ extern "C" {
 
 #include "p_cntl.h"
 #include "i_cntl.h"
-#include "d_ctnl.h"
+#include "d_cntl.h"
 
 extern void clamp(unit_t *cv);
 
@@ -21,10 +21,10 @@ typedef struct {
   p_cntl p;
   i_cntl i;
   d_cntl d;
-} pi_cntl;
+} pid_cntl;
 
 void pid_init(pid_cntl *cntl, unit_t kp, unit_t ki, unit_t kd);
-unit_t pid_eval(pid_cntl *cntl, unit_t target_val, unit_t current_val, int clamp);
+unit_t pid_eval(pid_cntl *cntl, unit_t target_val, unit_t current_val, int clmp);
 
 #ifdef __cplusplus
 }

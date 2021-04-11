@@ -4,10 +4,6 @@
  * @author Brian Reece
  */
 
-#ifndef PID_CONF_H
-#include "pid_conf.h"
-#endif
-
 #include "i_cntl.h"
 
 void i_init(i_cntl *cntl, unit_t ki)
@@ -17,7 +13,7 @@ void i_init(i_cntl *cntl, unit_t ki)
   return;
 }
 
-unit_t i_eval(i_cntl *cntl, unit_t target_val, unit_t current_val, int clamp)
+unit_t i_eval(i_cntl *cntl, unit_t target_val, unit_t current_val, int clmp)
 {
   unit_t error, cv;
 
@@ -27,7 +23,7 @@ unit_t i_eval(i_cntl *cntl, unit_t target_val, unit_t current_val, int clamp)
 
   cv = cntl->ki * cntl->integral;
 
-  if (clamp)
+  if (clmp)
     clamp(&cv);
 
   return cv;
