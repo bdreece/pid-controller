@@ -45,5 +45,5 @@ void poll(pid_cntl *cntl, unit_t target_val)
   cv = pid_eval(cntl, target_val, current_val, 1);
 
   printf("Control variable: %lf\n", cv);
-  return 1;
+  return;
 }

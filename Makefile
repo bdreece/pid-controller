@@ -1,7 +1,7 @@
 CC				= gcc
 AR				= ar
 AR_FLAGS	= -rc
-FLAGS			= -g -O2
+FLAGS			= -g -O2 -w
 CFLAGS		= -std=c99
 DYN_FLAGS	= -shared -Wl,-soname,libpidcntl.so
 LFLAGS		= -fPIC
