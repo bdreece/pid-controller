@@ -1,21 +1,31 @@
 CC				= gcc
 AR				= ar
-AR_FLAGS		= -rc
+AR_FLAGS	= -rc
 FLAGS			= -g -O2
-DYN_FLAGS		= -shared -Wl,-soname,libpidcontroller.so 
-LFLAGS			= -fPIC
+CFLAGS		= -std=c99
+DYN_FLAGS	= -shared -Wl,-soname,libpidcntl.so
+LFLAGS		= -fPIC
 
-STA_LIB_FILE	= libpidcontroller.a
-DYN_LIB_FILE	= libpidcontroller.so
-OBJ_FILES		= build/pid_controller.o
+INC_PATH	= ./inc
+SRC_PATH	= ./src
 
-${STA_LIB_FILE} : ${OBJ_FILES}
-	${AR} ${AR_FLAGS} ${STA_LIB_FILE} ${OBJ_FILES}
+OBJ_FILES	= p_cntl.o i_cntl.o d_cntl.o pi_cntl.o pd_cntl.o pid_cntl.o utils.o
+DEMO_FILE	= pid_demo.o
 
-${DYN_LIB_FILE}	: ${OBJ_FILES}
-	${CC} ${FLAGS} ${DYN_FLAGS} -o ${DYN_LIB_FILE} ${OBJ_FILES}
+%.o : $(SRC_PATH)/%.c
+	$(CC) $(FLAGS) $(CFLAGS) $(LFLAGS) -I$(INC_PATH) -c -o $@ $^
 
-build/*.o				: src/*.c
-	${CC} ${FLAGS} ${LFLAGS} -o $@ $^
+libpidcntl.so : $(OBJ_FILES)
+	$(CC) $(FLAGS) $(CFLAGS) $(DYN_FLAGS) -o $@ $^
 
-all : ${STA_LIB_FILE} ${DYN_LIB_FILE}
+libpidcntl.a : $(OBJ_FILES)
+	$(AR) $(AR_FLAGS) -o $@ $^
+
+pid_demo : $(OBJ_FILES) pid_demo.o
+	$(CC) $(FLAGS) $(CFLAGS) -o $@ $^
+
+all : libpidcntl.so libpidcntl.a pid_demo
+
+.PHONY : clean
+clean :
+	rm -f libpidcntl.* *.o
