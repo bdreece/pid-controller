@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
   unit_t target_val, kp, ki, kd;
   if (argc < 5)
   {
-    printf("Usage: ./pid_demo target_val kp ki kd");
+    printf("Usage: ./pid_demo target_val kp ki kd\n");
     return 1;
   }
 
@@ -40,7 +40,7 @@ void poll(pid_cntl *cntl, unit_t target_val)
   unit_t current_val, cv;
 
   printf("Enter current value: ");
-  scanf("%lf\n", &current_val);
+  scanf("%lf", &current_val);
 
   cv = pid_eval(cntl, target_val, current_val, 1);
 
