@@ -11,13 +11,6 @@ extern "C" {
 
 #include "pid_conf.h"
 
-/*! \brief Dynamic clamping helper function
- *
- *  Method which clamps the control variable
- *  to the min and max values set in pid_conf.h
- *
- *  \param cv Pointer to the control variable
- */
 extern void clamp(unit_t *cv);
 
 /*! \brief Proportional Controller Handle
