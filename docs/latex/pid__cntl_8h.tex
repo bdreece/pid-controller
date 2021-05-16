@@ -1,0 +1,82 @@
+\hypertarget{pid__cntl_8h}{}\section{/home/bdreece/github/bdreece/pid-\/controller/inc/pid\+\_\+cntl.h File Reference}
+\label{pid__cntl_8h}\index{/home/bdreece/github/bdreece/pid-\/controller/inc/pid\+\_\+cntl.\+h@{/home/bdreece/github/bdreece/pid-\/controller/inc/pid\+\_\+cntl.\+h}}
+
+
+Proportional-\/\+Integral-\/\+Derivative Controller.  
+
+
+{\ttfamily \#include \char`\"{}p\+\_\+cntl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i\+\_\+cntl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}d\+\_\+cntl.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpid__cntl}{pid\+\_\+cntl}
+\begin{DoxyCompactList}\small\item\em Proportional-\/\+Integral-\/\+Derivative Controller Handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pid__cntl_8h_ae50fe626b3d3860061038323fef1e12a}\label{pid__cntl_8h_ae50fe626b3d3860061038323fef1e12a}} 
+void {\bfseries clamp} (\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} $\ast$cv)
+\item 
+void \hyperlink{pid__cntl_8h_a6a92b09203657446d8992d5b5e0d3fe7}{pid\+\_\+init} (\hyperlink{structpid__cntl}{pid\+\_\+cntl} $\ast$cntl, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} kp, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} ki, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} kd)
+\begin{DoxyCompactList}\small\item\em Initialize Proportional-\/\+Integral-\/\+Derivative Controller. \end{DoxyCompactList}\item 
+\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} \hyperlink{pid__cntl_8h_af8720a5a383a31094293221ff009cb0f}{pid\+\_\+eval} (\hyperlink{structpid__cntl}{pid\+\_\+cntl} $\ast$cntl, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} target\+\_\+val, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} current\+\_\+val, int clmp)
+\begin{DoxyCompactList}\small\item\em Evaluate the Control Variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Proportional-\/\+Integral-\/\+Derivative Controller. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pid__cntl_8h_af8720a5a383a31094293221ff009cb0f}\label{pid__cntl_8h_af8720a5a383a31094293221ff009cb0f}} 
+\index{pid\+\_\+cntl.\+h@{pid\+\_\+cntl.\+h}!pid\+\_\+eval@{pid\+\_\+eval}}
+\index{pid\+\_\+eval@{pid\+\_\+eval}!pid\+\_\+cntl.\+h@{pid\+\_\+cntl.\+h}}
+\subsubsection{\texorpdfstring{pid\+\_\+eval()}{pid\_eval()}}
+{\footnotesize\ttfamily \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} pid\+\_\+eval (\begin{DoxyParamCaption}\item[{\hyperlink{structpid__cntl}{pid\+\_\+cntl} $\ast$}]{cntl,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{target\+\_\+val,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{current\+\_\+val,  }\item[{int}]{clmp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the Control Variable. 
+
+Given a proportional-\/integral-\/derivative controller and target value, evaluate the control variable with respect to the current value. Dynamic clamping optional.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntl} & The proportional-\/integral-\/derivative controller \\
+\hline
+{\em target\+\_\+val} & The target value \\
+\hline
+{\em current\+\_\+val} & The current value \\
+\hline
+{\em clmp} & Whether to clamp the control variable, non-\/zero if desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The control variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pid__cntl_8h_a6a92b09203657446d8992d5b5e0d3fe7}\label{pid__cntl_8h_a6a92b09203657446d8992d5b5e0d3fe7}} 
+\index{pid\+\_\+cntl.\+h@{pid\+\_\+cntl.\+h}!pid\+\_\+init@{pid\+\_\+init}}
+\index{pid\+\_\+init@{pid\+\_\+init}!pid\+\_\+cntl.\+h@{pid\+\_\+cntl.\+h}}
+\subsubsection{\texorpdfstring{pid\+\_\+init()}{pid\_init()}}
+{\footnotesize\ttfamily void pid\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structpid__cntl}{pid\+\_\+cntl} $\ast$}]{cntl,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{kp,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{ki,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{kd }\end{DoxyParamCaption})}
+
+
+
+Initialize Proportional-\/\+Integral-\/\+Derivative Controller. 
+
+Assigns the proportional gain, kp, the integral gain, ki, and the derivative gain, kd, to a proportional-\/integral-\/derivative controller, cntl, and initializes the integral sum and last error values to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntl} & The proportional-\/integral-\/derivative controller \\
+\hline
+{\em kp} & The proportional gain \\
+\hline
+{\em ki} & The integral gain \\
+\hline
+{\em kd} & The derivative gain \\
+\hline
+\end{DoxyParams}

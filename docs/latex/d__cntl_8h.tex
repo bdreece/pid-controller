@@ -1,0 +1,76 @@
+\hypertarget{d__cntl_8h}{}\section{/home/bdreece/github/bdreece/pid-\/controller/inc/d\+\_\+cntl.h File Reference}
+\label{d__cntl_8h}\index{/home/bdreece/github/bdreece/pid-\/controller/inc/d\+\_\+cntl.\+h@{/home/bdreece/github/bdreece/pid-\/controller/inc/d\+\_\+cntl.\+h}}
+
+
+Derivative Controller.  
+
+
+{\ttfamily \#include \char`\"{}pid\+\_\+conf.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structd__cntl}{d\+\_\+cntl}
+\begin{DoxyCompactList}\small\item\em Derivative Controller Handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{d__cntl_8h_ae50fe626b3d3860061038323fef1e12a}\label{d__cntl_8h_ae50fe626b3d3860061038323fef1e12a}} 
+void {\bfseries clamp} (\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} $\ast$cv)
+\item 
+void \hyperlink{d__cntl_8h_aa9245008d37b8bc653ef93a401caa750}{d\+\_\+init} (\hyperlink{structd__cntl}{d\+\_\+cntl} $\ast$cntl, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} kd)
+\begin{DoxyCompactList}\small\item\em Initialize Derivative Controller. \end{DoxyCompactList}\item 
+\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} \hyperlink{d__cntl_8h_acb91426889a6ef2638af28f076584af5}{d\+\_\+eval} (\hyperlink{structd__cntl}{d\+\_\+cntl} $\ast$cntl, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} target\+\_\+val, \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} current\+\_\+val, int clmp)
+\begin{DoxyCompactList}\small\item\em Evaluate the Control Variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Derivative Controller. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{d__cntl_8h_acb91426889a6ef2638af28f076584af5}\label{d__cntl_8h_acb91426889a6ef2638af28f076584af5}} 
+\index{d\+\_\+cntl.\+h@{d\+\_\+cntl.\+h}!d\+\_\+eval@{d\+\_\+eval}}
+\index{d\+\_\+eval@{d\+\_\+eval}!d\+\_\+cntl.\+h@{d\+\_\+cntl.\+h}}
+\subsubsection{\texorpdfstring{d\+\_\+eval()}{d\_eval()}}
+{\footnotesize\ttfamily \hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t} d\+\_\+eval (\begin{DoxyParamCaption}\item[{\hyperlink{structd__cntl}{d\+\_\+cntl} $\ast$}]{cntl,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{target\+\_\+val,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{current\+\_\+val,  }\item[{int}]{clmp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the Control Variable. 
+
+Given a derivative controller and target, evaluate the control variable with respect to the current value. Dynamic clamping optional.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntl} & The derivative controller \\
+\hline
+{\em target\+\_\+val} & The target value \\
+\hline
+{\em current\+\_\+val} & The current value \\
+\hline
+{\em clmp} & Whether to clamp the control variable, non-\/zero if desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The control variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{d__cntl_8h_aa9245008d37b8bc653ef93a401caa750}\label{d__cntl_8h_aa9245008d37b8bc653ef93a401caa750}} 
+\index{d\+\_\+cntl.\+h@{d\+\_\+cntl.\+h}!d\+\_\+init@{d\+\_\+init}}
+\index{d\+\_\+init@{d\+\_\+init}!d\+\_\+cntl.\+h@{d\+\_\+cntl.\+h}}
+\subsubsection{\texorpdfstring{d\+\_\+init()}{d\_init()}}
+{\footnotesize\ttfamily void d\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structd__cntl}{d\+\_\+cntl} $\ast$}]{cntl,  }\item[{\hyperlink{pid__conf_8h_a86e89cbe1fee619005bafce52850ab0c}{unit\+\_\+t}}]{kd }\end{DoxyParamCaption})}
+
+
+
+Initialize Derivative Controller. 
+
+Assign derivative gain value, kd, to a derivative controller instance, cntl, and initialize last error value to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntl} & The derivative controller \\
+\hline
+{\em kd} & The derivative gain \\
+\hline
+\end{DoxyParams}
