@@ -2,21 +2,21 @@
  Cross-platform C library for PID controller and variants.
 
 ## Table of Contents
- 1. Getting Started
-    * About the Project
-    * Replit Demo
-    * Building the PID Controller Library
-    * Running the Demo Application
- 2. Library Guide
-    * Overview
-    * Proportional Controller
-    * Integral Controller
-    * Derivative Controller
-    * Combining Controllers
-    * Configuration
-      * Dynamic Clamping
-      * Variable Type
- 3. API Reference
+ 1. [Getting Started](https://github.com/bdreece/pid-controller#getting-started)
+    * [About the Project](https://github.com/bdreece/pid-controller#about-the-project)
+    * [Replit Demo](https://github.com/bdreece/pid-controller#replit-demo)
+    * [Building the PID Controller Library](https://github.com/bdreece/pid-controller#building-the-pid-controller-library)
+    * [Running the Demo Application](https://github.com/bdreece/pid-controller#running-the-demo-application)
+ 2. [Library Guide](https://github.com/bdreece/pid-controller#library-guide)
+    * [Overview](https://github.com/bdreece/pid-controller#overview)
+    * [Proportional Controller](https://github.com/bdreece/pid-controller#proportional-controller)
+    * [Integral Controller](https://github.com/bdreece/pid-controller#integral-controller)
+    * [Derivative Controller](https://github.com/bdreece/pid-controller#derivative-controller)
+    * [Combining Controllers](https://github.com/bdreece/pid-controller#combining-controllers)
+    * [Configuration](https://github.com/bdreece/pid-controller#configuration)
+      * [Dynamic Clamping](https://github.com/bdreece/pid-controller#dynamic-clamping)
+      * [Variable Type](https://github.com/bdreece/pid-controller#variable-type)
+ 3. [API Reference](https://github.com/bdreece/pid-controller#api-reference)
 
 ## Getting Started
 
