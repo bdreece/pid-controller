@@ -1,8 +1,4 @@
-/**
- * d_cntl.c
- *
- * @author Brian Reece
- */
+//! \file d_cntl.c
 
 #include "d_cntl.h"
 

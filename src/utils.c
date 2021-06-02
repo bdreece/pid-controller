@@ -1,8 +1,4 @@
-/**
- * utils.c
- *
- * @author Brian Reece
- */
+//! \file utils.c
 
 #include "pid_conf.h"
 

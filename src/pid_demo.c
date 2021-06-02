@@ -1,8 +1,4 @@
-/**
- * pid_demo.c
- *
- * @author Brian Reece
- */
+//! \file pid_demo.c
 
 #include <stdio.h>
 #include <stdlib.h>

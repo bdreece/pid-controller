@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pid-controller: inc/p_cntl.h File Reference</title>
+<title>pid-controller: src/i_cntl.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,55 +63,38 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">p_cntl.h File Reference</div>  </div>
+<div class="title">i_cntl.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Proportional Controller.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="pid__conf_8h_source.html">pid_conf.h</a>&quot;</code><br />
-</div>
-<p><a href="p__cntl_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp__cntl.html">p_cntl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional Controller Handle.  <a href="structp__cntl.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="i__cntl_8h_source.html">i_cntl.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae50fe626b3d3860061038323fef1e12a"><td class="memItemLeft" align="right" valign="top"><a id="ae50fe626b3d3860061038323fef1e12a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *cv)</td></tr>
-<tr class="separator:ae50fe626b3d3860061038323fef1e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7965e7a28a56b741f7c73c011fdf4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p__cntl_8h.html#a9f7965e7a28a56b741f7c73c011fdf4c">p_init</a> (<a class="el" href="structp__cntl.html">p_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> kp)</td></tr>
-<tr class="memdesc:a9f7965e7a28a56b741f7c73c011fdf4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Proportional Controller.  <a href="p__cntl_8h.html#a9f7965e7a28a56b741f7c73c011fdf4c">More...</a><br /></td></tr>
-<tr class="separator:a9f7965e7a28a56b741f7c73c011fdf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5347e8be648c5b52b90ecfd811639208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p__cntl_8h.html#a5347e8be648c5b52b90ecfd811639208">p_eval</a> (<a class="el" href="structp__cntl.html">p_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> target_val, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> current_val, int clmp)</td></tr>
-<tr class="memdesc:a5347e8be648c5b52b90ecfd811639208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the control variable.  <a href="p__cntl_8h.html#a5347e8be648c5b52b90ecfd811639208">More...</a><br /></td></tr>
-<tr class="separator:a5347e8be648c5b52b90ecfd811639208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e285623e6fd03459ed01edbea87788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__cntl_8c.html#a88e285623e6fd03459ed01edbea87788">i_init</a> (<a class="el" href="structi__cntl.html">i_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> ki)</td></tr>
+<tr class="memdesc:a88e285623e6fd03459ed01edbea87788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Integral Controller.  <a href="i__cntl_8c.html#a88e285623e6fd03459ed01edbea87788">More...</a><br /></td></tr>
+<tr class="separator:a88e285623e6fd03459ed01edbea87788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1b842e0f0d97daf4ed5029bd5a1c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__cntl_8c.html#add1b842e0f0d97daf4ed5029bd5a1c5e">i_eval</a> (<a class="el" href="structi__cntl.html">i_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> target_val, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> current_val, int clmp)</td></tr>
+<tr class="memdesc:add1b842e0f0d97daf4ed5029bd5a1c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the Control Variable.  <a href="i__cntl_8c.html#add1b842e0f0d97daf4ed5029bd5a1c5e">More...</a><br /></td></tr>
+<tr class="separator:add1b842e0f0d97daf4ed5029bd5a1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Proportional Controller. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a5347e8be648c5b52b90ecfd811639208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5347e8be648c5b52b90ecfd811639208">&#9670;&nbsp;</a></span>p_eval()</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="add1b842e0f0d97daf4ed5029bd5a1c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1b842e0f0d97daf4ed5029bd5a1c5e">&#9670;&nbsp;</a></span>i_eval()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> p_eval </td>
+          <td class="memname"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> i_eval </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structp__cntl.html">p_cntl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structi__cntl.html">i_cntl</a> *&#160;</td>
           <td class="paramname"><em>cntl</em>, </td>
         </tr>
         <tr>
@@ -140,11 +123,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate the control variable. </p>
-<p>Given a proportional controller and target, evaluate the control variable with respect to the current value. Dynamic clamping optional.</p>
+<p>Evaluate the Control Variable. </p>
+<p>Given an integral controller and target, evaluate the control variable with respect to the current value. Dynamic clamping optional.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cntl</td><td>The proportional controller </td></tr>
+    <tr><td class="paramname">cntl</td><td>The integral controller </td></tr>
     <tr><td class="paramname">target_val</td><td>The target value </td></tr>
     <tr><td class="paramname">current_val</td><td>The current value </td></tr>
     <tr><td class="paramname">clmp</td><td>Whether to clamp control variable, non-zero if desired </td></tr>
@@ -155,23 +138,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
 
 </div>
 </div>
-<a id="a9f7965e7a28a56b741f7c73c011fdf4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f7965e7a28a56b741f7c73c011fdf4c">&#9670;&nbsp;</a></span>p_init()</h2>
+<a id="a88e285623e6fd03459ed01edbea87788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e285623e6fd03459ed01edbea87788">&#9670;&nbsp;</a></span>i_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void p_init </td>
+          <td class="memname">void i_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structp__cntl.html">p_cntl</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structi__cntl.html">i_cntl</a> *&#160;</td>
           <td class="paramname"><em>cntl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a>&#160;</td>
-          <td class="paramname"><em>kp</em>&#160;</td>
+          <td class="paramname"><em>ki</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -181,12 +164,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
       </table>
 </div><div class="memdoc">
 
-<p>Initialize Proportional Controller. </p>
-<p>Assigns the gain value, kp, to a given proportional controller, cntl.</p>
+<p>Initialize Integral Controller. </p>
+<p>Assigns integral gain value, ki, to integral controller instance, cntl, and initializes integral sum value to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cntl</td><td>The proportional controller handle </td></tr>
-    <tr><td class="paramname">kp</td><td>The proportional gain </td></tr>
+    <tr><td class="paramname">cntl</td><td>The integral controller </td></tr>
+    <tr><td class="paramname">ki</td><td>The integral gain value </td></tr>
   </table>
   </dd>
 </dl>

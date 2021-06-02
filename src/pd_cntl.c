@@ -1,8 +1,4 @@
-/**
- * pd_cntl.c
- *
- * @author Brian Reece
- */
+//! \file pd_cntl.c
 
 #include "pd_cntl.h"
 

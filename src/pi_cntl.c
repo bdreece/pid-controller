@@ -1,8 +1,4 @@
-/**
- * pi_cntl.c
- *
- * @author Brian Reece
- */
+//! \file pi_cntl.c
 
 #include "pi_cntl.h"
 

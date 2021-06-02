@@ -1,9 +1,4 @@
-/**
- * i_cntl.c
- *
- * @author Brian Reece
- */
-
+//! \file i_cntl.c
 #include "i_cntl.h"
 
 void i_init(i_cntl *cntl, unit_t ki)

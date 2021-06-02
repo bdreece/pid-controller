@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "cdiklpu",
   1: "dip",
-  2: "dip",
+  2: "dipu",
   3: "cdip",
   4: "diklp",
   5: "u",

@@ -1,8 +1,4 @@
-/**
- * pid_cntl.c
- *
- * @author Brian Reece
- */
+//! \file pid_cntl.c
 
 #include "pid_cntl.h"
 

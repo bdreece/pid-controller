@@ -1,8 +1,4 @@
-/**
- * p_cntl.c
- *
- * @author Brian Reece
- */
+//! \file p_cntl.c
 
 #include "p_cntl.h"
 
