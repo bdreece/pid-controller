@@ -1,0 +1,2 @@
+language = "bash"
+run = "make && ./bin/pid_demo 128 0.1 0.2 0.3"

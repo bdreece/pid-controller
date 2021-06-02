@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
   ki = atof(argv[3]);
   kd = atof(argv[4]);
 
+	printf("PID Controller Demo:\n  Target = %.2f\n  Kp     = %.2f\n  Ki     = %.2f\n  Kd     = %.2f\n\n", target_val, kp, ki, kd);
+
   pid_cntl cntl;
 
   pid_init(&cntl, kp, ki, kd);

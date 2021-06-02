@@ -19,12 +19,15 @@ default: $(LIB_PATH)/libpidcntl.so $(LIB_PATH)/libpidcntl.a $(BIN_PATH)/pid_demo
 	$(CC) $(FLAGS) $(CFLAGS) $(LFLAGS) -I$(INC_PATH) -c -o $@ $^
 
 $(LIB_PATH)/libpidcntl.so: $(OBJ_FILES)
+	mkdir -p $(LIB_PATH)
 	$(CC) $(FLAGS) $(CFLAGS) $(DYN_FLAGS) -o $@ $^
 
 $(LIB_PATH)/libpidcntl.a: $(OBJ_FILES)
+	mkdir -p $(LIB_PATH)
 	$(AR) $(AR_FLAGS) -o $@ $^
 
 $(BIN_PATH)/pid_demo: pid_demo.o $(LIB_PATH)/libpidcntl.a
+	mkdir -p $(BIN_PATH)
 	$(CC) $(FLAGS) $(CFLAGS) -I$(INC_PATH) -o $@ $^
 
 all: $(LIB_PATH)/libpidcntl.so $(LIB_PATH)/libpidcntl.a $(BIN_PATH)/pid_demo clean docs
@@ -32,6 +35,7 @@ all: $(LIB_PATH)/libpidcntl.so $(LIB_PATH)/libpidcntl.a $(BIN_PATH)/pid_demo cle
 .PHONY: clean
 clean:
 	rm -f *.o
+	clear
 
 .PHONY: remove
 remove: clean
