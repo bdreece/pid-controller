@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['kd_14',['kd',['../structd__cntl.html#a86b01e92292450498e055d68966ab615',1,'d_cntl']]],
-  ['ki_15',['ki',['../structi__cntl.html#ad47354f9d952c54818d55a433e680b8a',1,'i_cntl']]],
-  ['kp_16',['kp',['../structp__cntl.html#a944ef2814f8a9fac7b0abfe4fb061c5b',1,'p_cntl']]]
+  ['example_10',['Example',['../classMyLibrary_1_1Example.html',1,'MyLibrary']]],
+  ['example_20page_11',['Example Page',['../page1.html',1,'']]]
 ];

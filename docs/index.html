@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -68,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a> Cross-platform C library for PID controller and variants.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Table of Contents</h1>
 <ol type="1">
 <li><a href="https://github.com/bdreece/pid-controller#getting-started">Getting Started</a><ul>
@@ -93,52 +94,52 @@ Table of Contents</h1>
 </li>
 <li><a href="https://github.com/bdreece/pid-controller#api-reference">API Reference</a></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Getting Started</h1>
-<h3><a class="anchor" id="autotoc_md3"></a>
+<h3><a class="anchor" id="autotoc_md19"></a>
 About the Project</h3>
 <p>This project is a platform-independent library of various proportional, integral, and derivative controllers written in C, compatible with C++. The controllers in this project are object-oriented, written as C structures to store information such as gain variables, integral sum, and derivative error differences. Dynamic clamping of the output variable, and the type definition used in the control and gain variables, is configurable via the <a class="el" href="pid__conf_8h.html" title="Configuration Header.">pid_conf.h</a> header file.</p>
-<h3><a class="anchor" id="autotoc_md4"></a>
+<h3><a class="anchor" id="autotoc_md20"></a>
 Replit Demo</h3>
 <p>The demo application linked against the PID controller library is available on Replit. As of right now, the demo compiles with dynamic clamping configured to +/- 255, variable type to float, target value to 128, Kp to 0.1, Ki to 0.2, and Kd to 0.3. In future updates I will changes this to a user prompted scanf, I just haven't gotten around to it yet.</p>
 <p><a href="https://replit.com/@bdreece/pid-controller">Replit Demo</a></p>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 Building the PID Controller Library</h3>
 <p>The PID Controller Library can be easily compiled into shared and/or static libraries for any platform. First, be sure to have cloned the repository into your current working directory, and navigate to it:</p>
 <div class="fragment"><div class="line">git clone https://github.com/bdreece/pid-controller.git</div>
 <div class="line">cd pid-controller/</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>Next, you can review and configure the Makefile in your current directory. As you can see, the default build sequence compiles all the source files into object files, then links these objects together into static and dynamic libraries. The default build sequence also compiles and links a demo application against the PID Controller library. This demo can be used to manually test the behavior of manipulating gain variables. Future updates will include file input and output support for .csv files.</p>
-<h3><a class="anchor" id="autotoc_md6"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Running the Demo Application</h3>
 <p>After you've built the libraries and demo application on your system, two new directories should appear: bin/ and lib/. The latter contains the compiled libraries, and the former, more importantly, contains the compiled binary of the demo application. This program can be run as follows:</p>
 <div class="fragment"><div class="line">./bin/pid_demo &lt;TARGET&gt; &lt;KP&gt; &lt;KI&gt; &lt;KD&gt;</div>
 </div><!-- fragment --><p>The application will continually prompt for the current measurement value to use in calculating the control variable. With each successive input, the control variable will change, attempting to bring the measurement value toward the target value (barring any wild gain configurations).</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Library Guide</h1>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
 Overview</h3>
 <p>TODO</p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Proportional Controller</h3>
 <p>TODO</p>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 Integral Controller</h3>
 <p>TODO</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 Derivative Controller</h3>
 <p>TODO</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md28"></a>
 Combining Controllers</h3>
 <p>TODO</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md29"></a>
 Configuration</h3>
 <p>TODO</p>
 <h5>Dynamic Clamping</h5>
 <p>TODO</p>
 <h5>Variable Type</h5>
 <p>TODO</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md30"></a>
 API Reference</h1>
 <p>Documentation for this projects has been generated by Doxygen, and is avaiable on the GitHub Pages for this repository:</p>
 <p><a href="https://bdreece.github.io/pid-controller/index.html">PID Controller Documentation</a> </p>
