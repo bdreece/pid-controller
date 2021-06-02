@@ -91,8 +91,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae50fe626b3d3860061038323fef1e12a"><td class="memItemLeft" align="right" valign="top"><a id="ae50fe626b3d3860061038323fef1e12a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *cv)</td></tr>
+<tr class="memitem:ae50fe626b3d3860061038323fef1e12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid__cntl_8h.html#ae50fe626b3d3860061038323fef1e12a">clamp</a> (<a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *cv)</td></tr>
 <tr class="separator:ae50fe626b3d3860061038323fef1e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a92b09203657446d8992d5b5e0d3fe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid__cntl_8h.html#a6a92b09203657446d8992d5b5e0d3fe7">pid_init</a> (<a class="el" href="structpid__cntl.html">pid_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> kp, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> ki, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> kd)</td></tr>
 <tr class="memdesc:a6a92b09203657446d8992d5b5e0d3fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Proportional-Integral-Derivative Controller.  <a href="pid__cntl_8h.html#a6a92b09203657446d8992d5b5e0d3fe7">More...</a><br /></td></tr>
@@ -104,6 +103,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Proportional-Integral-Derivative Controller. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae50fe626b3d3860061038323fef1e12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50fe626b3d3860061038323fef1e12a">&#9670;&nbsp;</a></span>clamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>utils.c</p>
+<dl class="section author"><dt>Author</dt><dd>Brian Reece </dd></dl>
+
+</div>
+</div>
 <a id="af8720a5a383a31094293221ff009cb0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8720a5a383a31094293221ff009cb0f">&#9670;&nbsp;</a></span>pid_eval()</h2>
 
@@ -202,10 +221,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
     <tr><td class="paramname">cntl</td><td>The proportional-integral-derivative controller </td></tr>
     <tr><td class="paramname">kp</td><td>The proportional gain </td></tr>
     <tr><td class="paramname">ki</td><td>The integral gain </td></tr>
-    <tr><td class="paramname">kd</td><td>The derivative gain </td></tr>
+    <tr><td class="paramname">kd</td><td>The derivative gain</td></tr>
   </table>
   </dd>
 </dl>
+<p>pid_cntl.c</p>
+<dl class="section author"><dt>Author</dt><dd>Brian Reece </dd></dl>
 
 </div>
 </div>

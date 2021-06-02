@@ -89,8 +89,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae50fe626b3d3860061038323fef1e12a"><td class="memItemLeft" align="right" valign="top"><a id="ae50fe626b3d3860061038323fef1e12a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *cv)</td></tr>
+<tr class="memitem:ae50fe626b3d3860061038323fef1e12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p__cntl_8h.html#ae50fe626b3d3860061038323fef1e12a">clamp</a> (<a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *cv)</td></tr>
 <tr class="separator:ae50fe626b3d3860061038323fef1e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7965e7a28a56b741f7c73c011fdf4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p__cntl_8h.html#a9f7965e7a28a56b741f7c73c011fdf4c">p_init</a> (<a class="el" href="structp__cntl.html">p_cntl</a> *cntl, <a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> kp)</td></tr>
 <tr class="memdesc:a9f7965e7a28a56b741f7c73c011fdf4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Proportional Controller.  <a href="p__cntl_8h.html#a9f7965e7a28a56b741f7c73c011fdf4c">More...</a><br /></td></tr>
@@ -102,6 +101,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Proportional Controller. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae50fe626b3d3860061038323fef1e12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50fe626b3d3860061038323fef1e12a">&#9670;&nbsp;</a></span>clamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pid__conf_8h.html#a86e89cbe1fee619005bafce52850ab0c">unit_t</a> *&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>utils.c</p>
+<dl class="section author"><dt>Author</dt><dd>Brian Reece </dd></dl>
+
+</div>
+</div>
 <a id="a5347e8be648c5b52b90ecfd811639208"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5347e8be648c5b52b90ecfd811639208">&#9670;&nbsp;</a></span>p_eval()</h2>
 
@@ -186,10 +205,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clamp</b> (<a class="
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cntl</td><td>The proportional controller handle </td></tr>
-    <tr><td class="paramname">kp</td><td>The proportional gain </td></tr>
+    <tr><td class="paramname">kp</td><td>The proportional gain</td></tr>
   </table>
   </dd>
 </dl>
+<p>p_cntl.c</p>
+<dl class="section author"><dt>Author</dt><dd>Brian Reece </dd></dl>
 
 </div>
 </div>
