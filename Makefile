@@ -39,8 +39,8 @@ clean:
 
 .PHONY: remove
 remove: clean
-	rm $(BIN_PATH)/* $(LIB_PATH)/*
+	rm -rf $(BIN_PATH) $(LIB_PATH) ./docs
 
 .PHONY: docs
 docs:
-	cd docs/; doxygen
+	doxygen

@@ -13,9 +13,10 @@ var searchData=
   ['pi_5fcntl_2eh_28',['pi_cntl.h',['../pi__cntl_8h.html',1,'']]],
   ['pi_5feval_29',['pi_eval',['../pi__cntl_8h.html#a17787b0815c862ed46aceda2f252b0e5',1,'pi_cntl.h']]],
   ['pi_5finit_30',['pi_init',['../pi__cntl_8h.html#a2bac3ac516f818ca4fc55daf543e3dad',1,'pi_cntl.h']]],
-  ['pid_5fcntl_31',['pid_cntl',['../structpid__cntl.html',1,'']]],
-  ['pid_5fcntl_2eh_32',['pid_cntl.h',['../pid__cntl_8h.html',1,'']]],
-  ['pid_5fconf_2eh_33',['pid_conf.h',['../pid__conf_8h.html',1,'']]],
-  ['pid_5feval_34',['pid_eval',['../pid__cntl_8h.html#af8720a5a383a31094293221ff009cb0f',1,'pid_cntl.h']]],
-  ['pid_5finit_35',['pid_init',['../pid__cntl_8h.html#a6a92b09203657446d8992d5b5e0d3fe7',1,'pid_cntl.h']]]
+  ['pid_2dcontroller_31',['pid-controller',['../index.html',1,'']]],
+  ['pid_5fcntl_32',['pid_cntl',['../structpid__cntl.html',1,'']]],
+  ['pid_5fcntl_2eh_33',['pid_cntl.h',['../pid__cntl_8h.html',1,'']]],
+  ['pid_5fconf_2eh_34',['pid_conf.h',['../pid__conf_8h.html',1,'']]],
+  ['pid_5feval_35',['pid_eval',['../pid__cntl_8h.html#af8720a5a383a31094293221ff009cb0f',1,'pid_cntl.h']]],
+  ['pid_5finit_36',['pid_init',['../pid__cntl_8h.html#a6a92b09203657446d8992d5b5e0d3fe7',1,'pid_cntl.h']]]
 ];
