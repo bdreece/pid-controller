@@ -16,7 +16,6 @@
     * Configuration
       * Dynamic Clamping
       * Variable Type
-    * Build Sequence
  3. API Reference
 
 ## Getting Started
@@ -48,7 +47,9 @@
  into your current working directory, and navigate to it:
 
  ```bash
- git clone https://github.com/bdreece/pid-controller.git && cd pid-controller/
+ git clone https://github.com/bdreece/pid-controller.git
+ cd pid-controller/
+ make
  ```
 
  Next, you can review and configure the Makefile in your current directory.
@@ -77,7 +78,37 @@
 
 ## Library Guide
 
-- [ ] TODO: Write library guide
+#### Overview
+
+ TODO
+
+#### Proportional Controller
+
+ TODO
+
+#### Integral Controller
+
+ TODO
+
+#### Derivative Controller
+
+ TODO
+
+#### Combining Controllers
+
+ TODO
+
+#### Configuration
+
+ TODO
+
+###### Dynamic Clamping
+
+ TODO
+
+###### Variable Type
+
+ TODO
 
 ## API Reference
 
