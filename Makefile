@@ -30,12 +30,16 @@ $(BIN_PATH)/pid_demo: pid_demo.o $(LIB_PATH)/libpidcntl.a
 	mkdir -p $(BIN_PATH)
 	$(CC) $(FLAGS) $(CFLAGS) -I$(INC_PATH) -o $@ $^
 
+.PHONY: all
 all: $(LIB_PATH)/libpidcntl.so $(LIB_PATH)/libpidcntl.a $(BIN_PATH)/pid_demo clean docs
+
+.PHONY: repl
+repl: default
+	clear
 
 .PHONY: clean
 clean:
 	rm -f *.o
-	clear
 
 .PHONY: remove
 remove: clean
