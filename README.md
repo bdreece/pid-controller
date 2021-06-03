@@ -2,21 +2,21 @@
  Cross-platform C library for PID controller and variants.
 
 ## Table of Contents
- 1. [Getting Started](https://github.com/bdreece/pid-controller#getting-started)
-    * [About the Project](https://github.com/bdreece/pid-controller#about-the-project)
-    * [Replit Demo](https://github.com/bdreece/pid-controller#replit-demo)
-    * [Building the PID Controller Library](https://github.com/bdreece/pid-controller#building-the-pid-controller-library)
-    * [Running the Demo Application](https://github.com/bdreece/pid-controller#running-the-demo-application)
- 2. [Library Guide](https://github.com/bdreece/pid-controller#library-guide)
-    * [Overview](https://github.com/bdreece/pid-controller#overview)
-    * [Proportional Controller](https://github.com/bdreece/pid-controller#proportional-controller)
-    * [Integral Controller](https://github.com/bdreece/pid-controller#integral-controller)
-    * [Derivative Controller](https://github.com/bdreece/pid-controller#derivative-controller)
-    * [Combining Controllers](https://github.com/bdreece/pid-controller#combining-controllers)
-    * [Configuration](https://github.com/bdreece/pid-controller#configuration)
-      * [Dynamic Clamping](https://github.com/bdreece/pid-controller#dynamic-clamping)
-      * [Variable Type](https://github.com/bdreece/pid-controller#variable-type)
- 3. [API Reference](https://github.com/bdreece/pid-controller#api-reference)
+ 1. [Getting Started](#getting-started)
+    * [About the Project](#about-the-project)
+    * [Replit Demo](#replit-demo)
+    * [Building the PID Controller Library](#building-the-pid-controller-library)
+    * [Running the Demo Application](#running-the-demo-application)
+ 2. [Library Guide](#library-guide)
+    * [Overview](#overview)
+    * [Proportional Controller](#proportional-controller)
+    * [Integral Controller](#integral-controller)
+    * [Derivative Controller](#derivative-controller)
+    * [Combining Controllers](#combining-controllers)
+    * [Configuration](#configuration)
+      * [Dynamic Clamping](#dynamic-clamping)
+      * [Variable Type](#variable-type)
+ 3. [API Reference](#api-reference)
 
 ## Getting Started
 
